@@ -1,0 +1,13 @@
+   |f| file_text.each{|element| f.puts(element)}
+def shuffle_file
+
+  file_text = []
+end
+
+  File.foreach (file_name) {|line| file_text << line}
+  File.open("#{file_name}-shuffled.txt","w+") do
+shuffle_file
+  end
+  file_name = gets.chomp
+  puts "Please enter a file name."
+  file_text.shuffle!
